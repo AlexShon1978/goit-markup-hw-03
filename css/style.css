@@ -33,7 +33,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
-h1,h2,h3,h4 {
+h1,h2,h3,h4,p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -58,6 +58,8 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .section {
     padding-top: 94px;
@@ -67,8 +69,6 @@ img {
 .header-conteiner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: var(--background-color);
     border-bottom: 1px solid #ECECEC;
 }
 .header-nav {
@@ -80,11 +80,16 @@ img {
 }
 .menu-nav-contact {
     display: flex;
+    margin-left: auto;
 }
 .logotyp {
     margin-right: 94px;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+.nav-list-item {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
@@ -132,16 +137,14 @@ line-height: 1.2;
 /*main*/
 /*hero*/
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--hero-footer-bg-color);
-    width: 1200px;
 }
 .hero-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    
 }
 .main-title {
     color: var(--text-color-white);
@@ -164,12 +167,9 @@ line-height: 1.2;
     border-radius: 4px;
     min-width: 200px;
     padding: 8px 28px;
-    
+    border: none;    
 }
 /*advantag*/
-.advantag-container {
-    padding-top: 94px;
-}
 .advantag-list {
     display: flex;
     margin-left: -30px;
@@ -179,6 +179,7 @@ line-height: 1.2;
     flex-basis: calc((100%-4*30px)/4);
 }
 .advantag-title {
+    margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -189,6 +190,9 @@ line-height: 1.2;
     line-height: 1.7;
 }
 /*work*/
+.work {
+    padding-top: 0;
+}
 .work-list {
     display: flex;
     margin-left: -30px;
@@ -208,7 +212,6 @@ line-height: 1.2;
 /*team*/
 .team {
     background: #F5F4FA;
-    width: 1200px;
 }
 .team-list {
     display: flex;
@@ -235,6 +238,7 @@ line-height: 1.2;
     margin-bottom: 10px;
 }
 .team-position {
+    color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
