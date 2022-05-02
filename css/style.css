@@ -66,10 +66,12 @@ img {
     padding-bottom: 94px;
 }
 /*header*/
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
 .header-conteiner {
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ECECEC;
+    align-items: center;    
 }
 .header-nav {
     display: flex;
@@ -87,9 +89,9 @@ img {
     padding-top: 24px;
     padding-bottom: 24px;
 }
-.nav-list-item {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.menu-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .nav-list-item:not(:last-child) {
     margin-right: 50px;
@@ -140,21 +142,18 @@ line-height: 1.2;
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--hero-footer-bg-color);
-}
-.hero-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+    text-align: center;
 }
 .main-title {
     color: var(--text-color-white);
+    width: 696px;
+    height: 120px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;    
 }
 .modal-btn {
     color: var(--text-color-white);
@@ -167,7 +166,7 @@ line-height: 1.2;
     border-radius: 4px;
     min-width: 200px;
     padding: 8px 28px;
-    border: none;    
+    border: none;
 }
 /*advantag*/
 .advantag-list {
@@ -303,7 +302,7 @@ line-height: 1.2;
     margin: 0;
 }
 /*footer*/
-.footer-container {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--hero-footer-bg-color);
